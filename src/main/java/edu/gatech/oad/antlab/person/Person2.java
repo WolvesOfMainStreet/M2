@@ -1,5 +1,7 @@
 package edu.gatech.oad.antlab.person;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 /**
  *  A simple class for person 2
  *  returns their name and a
@@ -29,10 +31,25 @@ public class Person2 {
 	 * @param input the string to be modified
 	 * @return the modified string
 	 */
-	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
-	}
+	 private String calc(String input) {
+	     char[] originalChars = input.toCharArray();
+	     char[] newChars = new char[input.length()];
+	     boolean[] usedChars = new boolean[input.length()];
+
+	     for (char c: originalChars) {
+	         boolean used = false;
+	         while(!used) {
+	             int i = ThreadLocalRandom.current().nextInt(input.length());
+	             if (!usedChars[i]) {
+	                 usedChars[i] = true;
+	                 used = true;
+	                 newChars[i] = c;
+	             }
+	         }
+	     }
+
+	     return new String(newChars);
+	 }
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
