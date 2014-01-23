@@ -10,15 +10,16 @@ package edu.gatech.oad.antlab.person;
  */
 public class Person1 {
   /** Holds the persons real name */
-  private String name;
+  	private String name;
   	/**
 	 * The constructor, takes in the persons
 	 * name
 	 * @param pname the person's real name
 	 */
-  public Person1(String pname) {
-    name = pname;
-  }
+  	public Person1(String pname) {
+	  name = pname;
+  	}
+  	
   	/**
 	 * This method should take the string
 	 * input and return its characters rotated
@@ -30,7 +31,7 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 1 put your implementation here
+	  // will figure this out later 
 	  return null;
 	}
 	
