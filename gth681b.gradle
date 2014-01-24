@@ -11,5 +11,5 @@ jar {
   }
 }
 
-sourceSets.main.compileClasspath += libraries
-sourceSets.main.runtimeClasspath += libraries
+sourceSets.main.compileClasspath += files("lib/resources.jar")
+sourceSets.main.runtimeClasspath += files("lib/resources.jar")
