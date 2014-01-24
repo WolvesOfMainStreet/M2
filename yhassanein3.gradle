@@ -1,0 +1,17 @@
+apply plugin: "java"
+
+String mainClass = "edu.gatech.oad.antlab.pkg1.AntLabMain"
+String classPath = "resources.jar"
+
+defaultTasks "jar"
+
+jar {
+    manifest {
+        attributes "Main-Class": mainClass, "Class-Path": classPath
+    }
+}
+
+FileCollection libraries = files(
+        "lib/resources.jar")
+sourceSets.main.compileClasspath += libraries
+sourceSets.main.runtimeClasspath += libraries
