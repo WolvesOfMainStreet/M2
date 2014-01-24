@@ -16,7 +16,7 @@ public class Person1 {
 	 * name
 	 * @param pname the person's real name
 	 */
-  	public Person1(name pname) {
+  	public Person1(String pname) {
 	  name = pname;
   	}
   	
@@ -39,9 +39,9 @@ public class Person1 {
 	  	newStr0 += input.charAt(index);
 	  }
 	  
-	  for (int index = 0; index < 2; i++)
+	  for (int index = 0; index < 2; index++)
 	  {
-	  	newStr1 = intput.charAt(index);
+	  	newStr1 += input.charAt(index);
 	  }
 	  
 	  return (newStr0 + newStr1);
