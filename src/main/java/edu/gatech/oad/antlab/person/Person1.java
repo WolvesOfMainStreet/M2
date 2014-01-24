@@ -16,8 +16,8 @@ public class Person1 {
 	 * name
 	 * @param pname the person's real name
 	 */
-  	public Person1(String pname) {
-	  name = pname;
+  	public Person1("Stephen Seung Wouk Cha") {
+	  name = "Stephen Seung Wouk Cha");
   	}
   	
   	/**
@@ -31,8 +31,20 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  // will figure this out later 
-	  return null;
+	  String newStr0 = "";
+	  String newStr1 = "";
+	  
+	  for (int index = 2; index < input.length(); index++)
+	  {
+	  	newStr0 += input.charAt(index);
+	  }
+	  
+	  for (int index = 0; index < 2; i++)
+	  {
+	  	newStr1 = intput.charAt(index);
+	  }
+	  
+	  return (newStr0 + newStr1);
 	}
 	
 	/**
