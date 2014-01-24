@@ -16,8 +16,8 @@ public class Person1 {
 	 * name
 	 * @param pname the person's real name
 	 */
-  	public Person1("Stephen Seung Wouk Cha") {
-	  name = "Stephen Seung Wouk Cha");
+  	public Person1(name pname) {
+	  name = pname;
   	}
   	
   	/**
