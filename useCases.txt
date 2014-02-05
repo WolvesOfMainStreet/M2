@@ -11,4 +11,6 @@ are pretty similar to each other and may be considered repeats as well.
 5)Find money sinks
 6)Create budget
 7)Find most profitable sectors
-8)
+8)Alter budget
+9)Change settings
+10)View financial history
